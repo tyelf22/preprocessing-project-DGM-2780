@@ -135,4 +135,10 @@ html {
   box-sizing: inherit;
 }
 /* Start your code here: */
+header {
+  background-color: #041E42;
+}
+header .logo h1 {
+  color: pink;
+}
 /*# sourceMappingURL=index.css.map */
