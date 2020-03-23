@@ -11,7 +11,7 @@
 
 - Mixins: Create 3 unique mixins (See variables.less) ✓
 
-- Content: You must match the layout you provided for both the  home and secondary pages. ✓
+- Content: You must match the layout you provided for both the  home and secondary pages.(walmart.com & walmart.com/browse) ✓
 
 - Is your site using escaping for responsive break points? (See variables.less) ✓
 
