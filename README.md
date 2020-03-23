@@ -3,7 +3,7 @@
 ## Requirements
 - Does your design match the theme (biking, spa, bookstore) you picked? ✓
 
-- Variables: Showcase your knowledge of variables by creating a font stack variable and 3 different color variables. (See variables.less) ✓
+- Variables: Showcase your knowledge of variables by creating a font stack variable and 3 different color variables. (see variables.less) ✓
 
 - Nesting: Did you nest your LESS to match your HTML structure? ✓
 
@@ -13,6 +13,6 @@
 
 - Content: You must match the layout you provided for both the  home and secondary pages.(walmart.com & walmart.com/browse) ✓
 
-- Is your site using escaping for responsive break points? (See variables.less) ✓
+- Is your site using escaping for responsive break points? (see variables.less) ✓
 
 ## I do not own the images used in this site, it is for educational purposes only.
