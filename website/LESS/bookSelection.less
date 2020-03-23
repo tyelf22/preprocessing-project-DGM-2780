@@ -24,25 +24,29 @@
                 width: 8rem;
             }
             p {
-                span {
-                    border-bottom: 2px solid @secondaryColor;
+                .defaultSpan {
+                    .underlineMixin(); //mixin for underline
                 }
                 margin-bottom: 2rem;
             }
 
         }
 
+        :hover {
+            p {
+                span {
+                    .underlineMixin(); //mixin for underline
+                }
+            }
+        }
+
 
     }
 }
 
-@media (min-width: 620px) {
+@media @min620 {
     .bookSelection{
         .bookSelectionContainer {
-            &::-webkit-scrollbar {
-
-            }
-    
             .bookSelectionItem {
                 margin: 1rem;
                 img {
@@ -58,14 +62,11 @@
     }
 }
 
-@media (min-width: 1340px) {
+@media @min1340 {
     .bookSelection{
         .bookSelectionContainer {
             justify-content: center;
-            &::-webkit-scrollbar {
 
-            }
-    
             .bookSelectionItem {
                 img {
 

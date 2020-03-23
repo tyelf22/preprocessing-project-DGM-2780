@@ -25,19 +25,16 @@ main {
         }
     }
     a {
+        .btnMixin(@secondaryColor); //mixin for button
         position: absolute;
-        cursor: pointer;
         top: 40%;
         left: 50%;
         border: none;
-        border-radius: 20px;
         width: 10rem;
         height: 4rem;
-        background-color: @secondaryColor;
         color: white;
         text-transform: uppercase;
         font-size: 2rem;
-        font-weight: 700;
         transform: translate(-50%, -50%);
         text-decoration: none;
         line-height: 4rem;
@@ -46,7 +43,7 @@ main {
 }
 
 
-@media (min-width: 620px) {
+@media @min620 {
 
     main {
 

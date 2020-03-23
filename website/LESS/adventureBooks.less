@@ -1,3 +1,4 @@
+
 .adventureBooks {
     h1 {
         font-size: 2rem;
@@ -5,9 +6,7 @@
         margin: 2rem 0;
     }
     .adventureBooksContainer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        .containerMixin();
         .adventureBooksItem {
             margin: 4rem;
             cursor: pointer;
@@ -25,17 +24,13 @@
             }
 
             .bookAdd {
-                display: block;
+                .btnMixin(@secondaryColor);
                 border: none;
-                border-radius: 20px;
                 height: 3rem;
                 width: 7rem;
-                background-color: @secondaryColor;
                 color: white;
                 text-transform: uppercase;
-                font-weight: 700;
                 margin: 0 auto;
-                cursor: pointer;
             }
         }
     }
