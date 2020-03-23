@@ -19,10 +19,12 @@ header {
             span {
                 display: none;
             }
-            i {
+            a {
                 color: @secondaryColor;
                 font-size: 3rem;
                 margin-left: 2rem;
+                cursor: pointer;
+                text-decoration: none;
             }
         }
 
@@ -34,6 +36,7 @@ header {
             border-top-left-radius: 2rem;
             border-bottom-left-radius: 2rem;
             height: 3rem;
+            width: 10rem;
             ::placeholder{
                 //Adjust place holder***********
                 margin-left: 1rem;
@@ -71,6 +74,16 @@ header {
             }
         }
     }
+
+}
+@media (min-width: 400px) {
+    header {
+        .search {
+            input {
+                width: 20rem;
+           }
+        }
+    }
 }
 
 @media (min-width: 620px) {
@@ -106,12 +119,12 @@ header {
     
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
 
     header {
         .search {
             input {
-                width: 30rem
+                width: 2rem;
             }
             
         }

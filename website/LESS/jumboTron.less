@@ -1,18 +1,66 @@
 main {
-    img{
-        height: 40rem;
-        width: 100%;
+    height: 50rem;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(200, 200, 200, 0.20)),
+        url('../images/jumboBooks.png');
+        
+    width: 100%;
+   
+    background-size: cover; 
+    position: relative;  
+    text-align: center;
+    
+    .jumboText {
+        position: absolute;
+        color: white;
+        top: 20%;
+        left: 50%;
+        font-size: 5rem;
+        transform: translate(-50%, -50%);
+
+        i {
+            color: @secondaryColor;
+            font-size: 3rem;
+            display: block;
+        }
     }
+    a {
+        position: absolute;
+        cursor: pointer;
+        top: 40%;
+        left: 50%;
+        border: none;
+        border-radius: 20px;
+        width: 10rem;
+        height: 4rem;
+        background-color: @secondaryColor;
+        color: white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        line-height: 4rem;
+    }
+
 }
 
 
 @media (min-width: 620px) {
 
     main {
-        img{
-            height: auto;
-            max-width: 136rem;
+
+        .jumboText {
+            i{
+                display: inline;
+            }
         }
+        
+        a {
+            top: 35%;
+        }
+
+       
     }
     
 }

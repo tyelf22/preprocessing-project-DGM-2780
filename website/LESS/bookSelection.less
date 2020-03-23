@@ -1,0 +1,34 @@
+.bookSelection{
+    h1 {
+        margin: 3rem 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .bookSelectionContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        border-bottom: 1px solid #ccc;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* make scrollbar transparent */
+            -webkit-overflow-scrolling: touch; // touch scrolling
+        }
+
+        .bookSelectionItem {
+            flex: 0 0 auto;
+            margin: 0.5rem;
+            img {
+                height: 12rem;
+                width: 8rem;
+            }
+            p {
+                span {
+                    border-bottom: 2px solid @secondaryColor;
+                }
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
