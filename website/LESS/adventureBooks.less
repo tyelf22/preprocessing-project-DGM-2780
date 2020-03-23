@@ -1,0 +1,43 @@
+.adventureBooks {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .adventureBooksContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .adventureBooksItem {
+            margin: 4rem;
+            cursor: pointer;
+            img {
+                display: block;
+                height: 22rem;
+                width: 14rem;
+                margin: 0 auto;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            p {
+                color: @primaryColor;
+                text-align: center;
+                margin: 0.5rem 0;
+            }
+
+            .bookAdd {
+                display: block;
+                border: none;
+                border-radius: 20px;
+                height: 3rem;
+                width: 7rem;
+                background-color: @secondaryColor;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

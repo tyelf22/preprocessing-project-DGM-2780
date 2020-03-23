@@ -216,8 +216,9 @@ header .navOptions .cart i {
     display: block;
     color: white;
     font-size: 2rem;
+    font-weight: 700;
   }
-  header .logo .logoBrand i {
+  header .logo .logoBrand a {
     margin-left: 0;
     padding: 0 0.5rem;
   }
@@ -238,7 +239,7 @@ header .navOptions .cart i {
 .wrapper .feedback {
   text-orientation: sideways;
 }
-.wrapper .feedback button {
+.wrapper .feedback #feedbackBtn {
   transform: rotate(-90deg);
   position: fixed;
   right: -3.5rem;
@@ -249,7 +250,7 @@ header .navOptions .cart i {
   border-radius: 5px;
   cursor: pointer;
 }
-.wrapper .feedback button i {
+.wrapper .feedback #feedbackBtn i {
   margin-right: 0.5rem;
   color: #041E42;
   transform: rotate(90deg);
@@ -540,5 +541,58 @@ footer .mainFooter p {
 }
 .bookSelection .bookSelectionContainer .bookSelectionItem p span {
   border-bottom: 2px solid #FFC220;
+}
+@media (min-width: 620px) {
+  .bookSelection .bookSelectionContainer .bookSelectionItem {
+    margin: 1rem;
+  }
+  .bookSelection .bookSelectionContainer .bookSelectionItem img {
+    height: 20rem;
+    width: 15rem;
+  }
+}
+@media (min-width: 1340px) {
+  .bookSelection .bookSelectionContainer {
+    justify-content: center;
+  }
+}
+.adventureBooks h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.adventureBooks .adventureBooksContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.adventureBooks .adventureBooksContainer .adventureBooksItem {
+  margin: 4rem;
+  cursor: pointer;
+}
+.adventureBooks .adventureBooksContainer .adventureBooksItem img {
+  display: block;
+  height: 22rem;
+  width: 14rem;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.adventureBooks .adventureBooksContainer .adventureBooksItem p {
+  color: #041E42;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.adventureBooks .adventureBooksContainer .adventureBooksItem .bookAdd {
+  display: block;
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 7rem;
+  background-color: #FFC220;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
